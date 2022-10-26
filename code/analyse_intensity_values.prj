@@ -1,0 +1,163 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="798437151" file="C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code\analyse_intensity_values.prj" location="C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code" name="analyse_intensity_values" preferred-package-location="C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code\analyse_intensity_values_in_LEC\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.library" target-name="Library Compiler">
+    <param.appname>analyse_intensity_values</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.5</param.version>
+    <param.authnamewatermark>Timon W. Matz</param.authnamewatermark>
+    <param.email>t.matz@mpimp-golm.mpg.de</param.email>
+    <param.company>University Potsdam</param.company>
+    <param.summary>Extract intensity information (for example microtubule intensity) of the largest empty circles, in or at the outline for each cell outlines.</param.summary>
+    <param.description>This function is used to extract information (orientation and  anisotropy) of microtubule (MT) intensities of the largest empty circle in the given contour outlines or at the inside of the outline (creating a square at each pixel of the outline, selecting intensity values from inside). 
+Input: watershedded labelled image, corresponding pixels microtubule intensity projection image, and the selected cells outlines
+Output: list of cells MT properties (list)
+extracted from https://github.com/DrReneSchneider/Matlab-Contour-Analysis 
+published in Ryan C. Eng et al. (2021) KATANIN and CLASP function at different spatial scales to mediate microtubule response to mechanical stress in Arabidopsis cotyledons, Current Biology 31, 1–13, https://doi.org/10.1016/j.cub.2021.05.019</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\University Potsdam\analyse_intensity_values\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>You must have Python 2.7, 3.8, 3.9, and/or 3.10 on your machine to install this package. Go to the directory containing your package and the file setup.py and execute:
+
+        python setup.py install [options]
+
+For details, see GettingStarted.html, distributed with this package, or the official Python documentation at:
+
+        https://docs.python.org/2/install/index.html</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}\analyse_intensity_values\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\analyse_intensity_values\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\analyse_intensity_values\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\analyse_intensity_values</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.python.module</param.target.type>
+    <param.support.packages />
+    <param.namespace />
+    <param.classorg />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.assembly.net.version>option.net.version.four</param.assembly.net.version>
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace />
+    <param.net.tsa.superclass>Class1</param.net.tsa.superclass>
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code</param.net.tsa.metadata.assembly>
+    <param.net.saved.interface />
+    <param.cpp.api>option.cpp.all</param.cpp.api>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+      <param.namespace />
+      <param.classorg />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.user.only.registration />
+      <param.assembly.net.version />
+      <param.net.enable.remoting />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+      <param.net.saved.interface />
+      <param.cpp.api />
+    </unset>
+    <fileset.exports>
+      <file>${PROJECT_ROOT}\analyse_intensity_at_outlines.m</file>
+      <file>${PROJECT_ROOT}\analyse_intensity_in_LEC.m</file>
+      <file>${PROJECT_ROOT}\analyse_intensity_in_outlines.m</file>
+    </fileset.exports>
+    <fileset.classes>
+      <entity.package name="">
+        <entity.class name="Class1">
+          <file>${PROJECT_ROOT}\analyse_intensity_at_outlines.m</file>
+          <file>${PROJECT_ROOT}\analyse_intensity_in_LEC.m</file>
+          <file>${PROJECT_ROOT}\analyse_intensity_in_outlines.m</file>
+        </entity.class>
+      </entity.package>
+    </fileset.classes>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\print_out_anisotropy_and_orientation.m</file>
+    </fileset.resources>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\calculate_anisotropy_and_orientation.m</file>
+      <file>${PROJECT_ROOT}\circfit.m</file>
+      <file>${PROJECT_ROOT}\LineNormals2D.m</file>
+    </fileset.depfun>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\labelledImageWithContour_1.tiff</file>
+    </fileset.package>
+    <fileset.examples>
+      <file>${PROJECT_ROOT}\sample_of_analyse_intensity_at_outlines.m</file>
+      <file>${PROJECT_ROOT}\sample_of_analyse_intensity_in_LEC.m</file>
+      <file>${PROJECT_ROOT}\sample_of_analyse_intensity_in_outlines.m</file>
+    </fileset.examples>
+    <fileset.documentation />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\analyse_intensity_values\for_testing" name="setup.py" optional="false">C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code\analyse_intensity_values\for_testing\setup.py</file>
+      <file location="${PROJECT_ROOT}\analyse_intensity_values\for_testing" name="analyse_intensity_values" optional="false">C:\Users\Timon\Documents\PhD\Projects\OfficialGitHubs\Matlab-Contour-Analysis-main\code\analyse_intensity_values\for_testing\analyse_intensity_values</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
